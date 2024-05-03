@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Leh-Ladakh Tourism </title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
+        <style>
+            /* Custom CSS */
+            .card-image {
+                background-size: cover;
+                background-position: center;
+                height: 200px;
+            }
+        </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    </head>
+
+    <body>
+        <nav>
+        <div class="flex bg-yellow-600 text-white justify-between py-6 px-6">
+            <div class="flex items-justify-between">
+                <img src="./Leh-Ladakh-01.png" alt="Leh Ladakh Tourism Logo" class="h-8 mr-4">
+            <span class="cursor-default">Ladakh Tourism</span> </div>
+            <div>
+                <ul class="flex gap-4 uppercase">
+                    <li><a href="./index.html" class="hover:text-red-500 hover:cursor-pointer">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-red-500 hover:cursor-pointer relative">About</li>
+                    <li class="hover:text-red-500 hover:cursor-pointer relative">Destination</li>
+                    <li><a href="./activites.html" class="hover:text-red-500 hover:cursor-pointer relative">Activities</li>
+                    <li class="hover:text-red-500 hover:cursor-pointer relative">Gallery</li>
+                    <li><a href="./contact.html" class="hover:text-red-500 hover:cursor-pointer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./DSC03773.JPG" class="bg-center absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./DSC03889.JPG" class="bg-bottom absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./DSC04412.JPG" class="bg-top absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./DSC04448.JPG" class="bg-center absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Leh Ladakh Tour Packages</h2>
+            <p class="text-lg text-center mb-12">Discover the breathtaking beauty of Leh Ladakh with our exclusive tour packages – where adventure meets tranquility at every high-altitude horizon!</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="card-image" style="background-image: url('./shanti\ stupa.jpeg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2"> Shanti Stupa </h3>
+                        <p class="text-gray-600">
+                            Shanti Stupa is a Buddhist white-domed Stupa on a hilltop in Chanspa, Ladakh, India. It was built by Japanese Buddhist Bhikshu, Gyomyo Nakamura. The Shanti Stupa holds the relics of the Buddha at its base, enshrined by the 14th Dalai Lama.
+                        </p>
+                        <a href="#" class="block text-center mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="card-image" style="background-image: url('./Leh-10.jpg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2"> Thiksey Monastery </h3>
+                        <p class="text-gray-600">
+                            Thiksey Monastery or Thiksey Gompa is a Buddhist monastery affiliated with the Gelug school of Tibetan Buddhism. It is located on top of a hill in Thiksey approximately 19 kilometres east of Leh, in the Ladakh region of northern India.
+                        </p>
+                        <a href="#" class="block text-center mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">View Details</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="card-image" style="background-image: url('./nubra\ vaIIey.jpg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2"> Nubra Valley </h3>
+                        <p class="text-gray-600"> 
+                            Nubra, also called Dumra, is a historical region of Ladakh, India that is currently administered in the Leh district. Its inhabited areas form a tri-armed valley cut by the Nubra and Shyok rivers. Its Tibetan name Dumra means "valley of flowers".
+                        </p>
+                        <a href="#" class="block text-center mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-green-800">
+        <img src="./Ladakh-banner.png" alt="Ladakh-banner" class="w-5/6 mx-auto py-5" />
+    </div>
+   
+    <div class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mt-3"> Adventures in Ladakh </h2>
+        <h5 class="text-center font-semibold text-gray-900 px-8">Ladakh offers opportunities like mountaineering, camping, river rafting, peak climbing & trekking.</h5>
+        <p class="text-center text-gray-600 mt-8 px-20">Mountaineers can experience the sheer thrill of scaling the unbelievable heights of mountain peaks in Ladakh like Stok Kangri, Nun Kun Massif, Gulap Kangri, Saser-I, II & III, all of which range between 5,000 to 7,000 meters attract mountaineers.
+            Trekking is another adventure activity which lets you explore the cultural & natural beauty of Ladakh, with famous treks like Stok Kangri Trek, Chadar Trek which is done in winter, Lamayuru to Darcha Trek & Nubra Valley Trek, where you can catch sight of the two-humped Bactrian camels.
+            Mountain biking is a famous adventure activity in Ladakh which can be enjoyed in places like Pangong Tso, Leh to Zingchen, Skiu to Chilling & Leh to Sankar Gompa. The joy of camping in Ladakh, with such breathtaking scenery to surround you, cannot be overstated, with top camping locations being Thiksey, Hunder Village, Tso Moriri & Zanskar Valley. 
+            Ladakh is a popular river rafting destination too, which can be enjoyed on the Indus and Zanskar rivers, with the two most famous stretches being Phey to Saspol & Phey to Nimo.</p>
+    </div>
+<div class="grid grid-cols-4 w-6/6 px-auto p-6 gap-1">
+    <div class="relative">
+        <img src="./budhha statue.JPG" alt="Grid 04" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Pilgrimage </div>
+    </div>
+    <div class="relative">
+        <img src="./bike-tour.jpg" alt="Grid 05" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Biking </div>
+    </div>
+    <div class="relative">
+        <img src="./camel ride.JPG" alt="Grid 03" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Camel Ride </div>
+    </div>
+    <div class="relative">
+        <img src="./cycling.jpeg" alt="Grid 01" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Mountain Cycling </div>
+    </div>
+    <div class="relative">
+        <img src="./trekking.jpg" alt="Grid 06" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Trekking </div>
+    </div>
+    <div class="relative h-10">
+        <img src="./bridge.JPG" alt="Grid 02" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Bridge crossing </div>
+    </div>
+    <div class="relative">
+        <img src="./jeep.jpg" alt="Grid 07" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Jeep Safari </div>
+    </div>
+    <div class="relative mb-12">
+        <img src="./camping.jpg" alt="Grid 08" class="z-10 relative" />
+        <div class="bg-black bg-opacity-70 text-center text-md text-white mt-[-20px] z-20 relative 
+        hover:bg-opacity-100 hover:h-[96px] transition-all duration-1000">
+         Camping </div>
+    </div>
+</div>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- About Section -->
+                <div class="md:col-span-2 lg:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">About Us</h3>
+                    <p class="text-gray-400">Explore the beauty of Leh Ladakh with our handcrafted tour packages. Experience adventure, culture, and serenity in one unforgettable journey.</p>
+                    <p><a href="./about.html"> Read more</a></p>
+                </div>
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a href="./index.html" class="text-gray-400 hover:text-gray-600">Home</a></li>
+                        <li><a href="./about.html" class="text-gray-400 hover:text-gray-600">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-grey-600">Destinations</a></li>
+                        <li><a href="activites.html" class="text-gray-400 hover:text-gray-600">Activities</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-gray-600">Gallery</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gray-600">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">Leh Ladakh Tourism</p>
+                    <p class="text-gray-400">123 Street, Leh, Ladakh</p>
+                    <p class="text-gray-400">+91 123 4567890</p>
+                    <p class="text-gray-400">info@lehladakhtourism.com</p>
+                </div>
+                <!-- Social Media Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+                    <ul class="flex gap-4">
+                        <li><a href="https://www.facebook.com/utladakhtourism/"> <img src="./facebook.png" width="30px" height="30px" class="hover:bg-gray-500"></a></li>
+                        <li><a href="https://twitter.com/utladakhtourism?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./twitter-logo-.png" width="30px" height="30px" class="hover:bg-gray-500"></a></li>
+                        <li><a href="https://www.instagram.com/utladakhtourism/?hl=en"> <img src="./instragram.png" width="30px" height="30px" class="hover:bg-gray-500"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <P></P>
+            <p>&copy; Copyright @2008 Connecting Horizons Travel Services. All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    </body>
+</html>
